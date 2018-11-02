@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  align-items: center;
+  background-color: lightgray;
+  color: #111;
+  display: flex;
+  font-family: 'Griffy', sans-serif;
+  font-size: 50px;
+  height: 100px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+.TodoInput {
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  outline-color: #F96B85;
+  padding: 1em 2em;
+  width: 500px;
+}
+
+ul {
+  margin: auto;
+  overflow: auto;
+  padding-bottom: 70px;
+  padding-left: 0px;
+  width: 700px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 1.8;
+  list-style-type: none;
+  text-align: left;
+  margin: 10px;
+  padding: 10px 0;
+  background: white;
+  border: solid 1px lightgray;
+  border-radius: 3px;
+}
+
+.error {
+  color: #F96B85;
+}
+
+.success {
+  color: #84e70a;
+}
+
+span {
+  visibility: hidden;
+}
+
+li:hover span {
+  cursor: pointer;
+  visibility: visible;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+footer {
+  align-items: center;
+  background-color: #FFD478;
+  bottom: 0;
+  display: flex;
+  height: 50px;
+  left: 0;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+footer a {
+  color: #111;
+  padding: 0 5px;
+}
+
+footer a:hover {
+  color: #F96B85;
+}
+
+footer a.active {
+  font-weight: bold;
+}
+
+
+.message {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
